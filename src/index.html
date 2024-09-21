@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="styles/main.scss">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Aniversário Esta Chegando!</h1>
+            <p>Participe desse evento inesquecivel</p>
+        </header>
+
+        <div class="countdown-container">
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>Dias</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>Horas</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>Minutos</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>segundos</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-details">
+            <div class="detail">
+                <i class="fas fa-calendar-alt"></i>
+                <span>08 de Fevereiro de 2025</span>
+            </div>
+            <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>20h</span>
+            </div>
+            <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Rua Fictícia, 123 </span>
+            </div>
+        </div>
+
+        <button id="rsvp-button" class="rsvp-button">Confirme Sua Presença</button>
+
+        <footer>
+            <i class="fas fa-birthday-cake"></i>
+            <p>Estou ansioso para comemorar com você!</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

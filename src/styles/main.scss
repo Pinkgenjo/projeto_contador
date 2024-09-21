@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+$primary-color: #8a2be2;
+$secondary-color: #4169e1;
+$text-color: #ffffff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    color: $text-color;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 3rem;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+}
+
+.countdown-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    margin-bottom: 3rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+
+    .time {
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        small {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.event-details {
+    margin-bottom: 3rem;
+
+    .detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        span {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.rsvp-button {
+    background-color: $text-color;
+    color: $primary-color;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+footer {
+    margin-top: 3rem;
+
+    i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .countdown {
+        flex-wrap: wrap;
+
+        .time {
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+}
